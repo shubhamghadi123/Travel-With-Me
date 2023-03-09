@@ -19,8 +19,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
     transition: 0.5s;
+    background-color: rgba(107, 107, 107, 0.795);
 }
 
 .logo {
@@ -34,7 +34,7 @@ header {
 }
 
 .logo a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ header {
 
 .nav-menu li a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem;
     display: block;
 }
@@ -53,4 +53,32 @@ header {
 .nav-menu li:hover {
     letter-spacing: 0.5px;
     transform: scale(1.1);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 }
