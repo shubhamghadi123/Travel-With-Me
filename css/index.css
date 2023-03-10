@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;800;700;600;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -11,6 +11,10 @@ body{
     font-family: 'Karla', sans-serif;
 }
 
+#nav-checkbox, .nav-toggle {
+    display: none;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -20,7 +24,6 @@ header {
     align-items: center;
     justify-content: space-around;
     transition: 0.5s;
-    background-color: rgba(107, 107, 107, 0.795);
 }
 
 .logo {
@@ -55,8 +58,29 @@ header {
     transform: scale(1.1);
 }
 
-#nav-checkbox, .nav-toggle {
-    display: none;
+.active {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.active li:hover {
+    letter-spacing: 0.5px;
+    transform: scale(1.1);
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/header.jpg) no-repeat fixed bottom / cover;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
 }
 
 @media only screen and (max-width: 768px){
