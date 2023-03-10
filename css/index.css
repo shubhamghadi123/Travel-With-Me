@@ -55,30 +55,64 @@ header {
     transform: scale(1.1);
 }
 
-.toggle-button {
-    position: absolute;
-    top: 1.3rem;
-    right: 1rem;
+#nav-checkbox, .nav-toggle {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 15px;
-}
-
-@media (max-width: 768px) {
-    .toggle-button {
-        display: flex;
+@media only screen and (max-width: 768px){
+    header {
+        display: block;
     }
 
-    .nav-menu {
+    .logo {
+        margin-left: 15px;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 21px;
+        right: 10px;
+    }
+
+    .nav-toggle img {
+        width: 25px;
+    }
+
+    .close, input[type='checkbox']{
         display: none;
+    }
+
+    #nav-checkbox:checked ~ .nav-menu {
+        background: rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+        padding: 10px;
+        border-top: 1px solid white;
+    }
+
+    .nav-menu li {
+        display: none;
+    }
+
+    #nav-checkbox:checked ~ ul.nav-menu li {
+        display: block;
+        text-align: center;
+    }
+
+    #nav-checkbox:checked ~ label.nav-toggle .open {
+        display: none;
+    }
+
+    #nav-checkbox:checked ~ label.nav-toggle .close {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .logo {
+        letter-spacing: 0px;
+        margin-left: 0;
     }
 }
