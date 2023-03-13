@@ -1,0 +1,51 @@
+.container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.outside-box {
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.outside-box-login {
+    width: 300px;
+}
+
+.card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    padding: 5%;
+    border: none;
+}
+
+.form-box {
+    border-radius: 20px;
+    border: none;
+}
+
+.login-card-body {
+    padding: 20px;
+}
+
+.inputText {
+    border-radius: 25px;
+    border-color: rgb(235, 235, 235);
+}
+
+.submitBtn {
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.inputText:focus {
+    color: black;
+}
