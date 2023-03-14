@@ -12,7 +12,7 @@
 }
 
 .outside-box-login {
-    width: 300px;
+    width: 380px;
 }
 
 .card {
@@ -48,4 +48,11 @@
 
 .inputText:focus {
     color: black;
+}
+
+@media (max-width: 576px){
+    .outside-box{
+        margin-top: 0.5rem;
+        width: 90%;
+    }
 }
