@@ -19,6 +19,10 @@
     width: 420px;
 }
 
+.outside-box-forgot_password {
+    width: 370px;
+}
+
 .card {
     background-color: #fff;
     background-clip: border-box;
