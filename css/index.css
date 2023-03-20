@@ -45,7 +45,6 @@ header {
     display: inline-block;
     font-size: 1.1rem;
     position: relative;
-    padding-right: 20px;
 }
 
 .nav-menu li a {
@@ -69,7 +68,7 @@ header {
     height: 3px;
     background-color: red;
     border-radius: 10px;
-    scale: 0 1;
+    scale: 0 0.6;
     transform-origin: center;
     transition: scale 0.35s;
 }
