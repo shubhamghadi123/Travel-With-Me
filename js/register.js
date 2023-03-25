@@ -14,12 +14,12 @@ registerBtn.addEventListener('click', (e) => {
     if(username === "" || email === "" || password === "" || confirmPassword === ""){
         regErrorMsg.classList.remove("visually-hidden");
     }
-
+    
     if(password != confirmPassword){
         confirmPassErrorMsg.classList.remove("visually-hidden");
     }
 
-    if(password.length < 8){
+    if(password.length > 1 && password.length < 8){
         passErrorMsg.classList.remove("visually-hidden");
     }
 })
