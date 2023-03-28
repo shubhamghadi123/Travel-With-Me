@@ -13,6 +13,7 @@ registerBtn.addEventListener('click', (e) => {
     const password = registerForm.password.value;
     const confirmPassword = registerForm.confirmPassword.value;
     const email = registerForm.email.value;
+    var regEmail = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
 
     regErrorMsg.classList.add("visually-hidden");
     confirmPassErrorMsg.classList.add("visually-hidden");
@@ -24,7 +25,6 @@ registerBtn.addEventListener('click', (e) => {
         regErrorMsg.classList.remove("visually-hidden");
     }
     else{
-        console.log("123")
         if(password != confirmPassword){
             confirmPassErrorMsg.classList.remove("visually-hidden");
         }
@@ -33,11 +33,11 @@ registerBtn.addEventListener('click', (e) => {
             passErrorMsg.classList.remove("visually-hidden");
         }
     
-        if(password.value != (/[A-Z]/) && password.value != (/[0-9]/)){
+        if(password.value != /^([a-zA-Z0-9\!@#$%^&*_+?])$/){
             passContains.classList.remove("visually-hidden");
         }
     
-        if(email.charAt(email.length-4 != '.')){
+        if(email.value != regEmail){
             emailErrorMsg.classList.remove("visually-hidden");
         }
     }

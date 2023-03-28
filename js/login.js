@@ -13,4 +13,7 @@ loginBtn.addEventListener('click', (e) => {
     if(username === "" || password === ""){
         errorMsg.classList.remove("visually-hidden");
     }
+    else{
+        errorMsg.classList.add("visually-hidden");
+    }
 })
