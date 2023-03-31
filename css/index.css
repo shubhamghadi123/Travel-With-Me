@@ -45,6 +45,7 @@ header {
     display: inline-block;
     font-size: 1.1rem;
     position: relative;
+    
 }
 
 .nav-menu li a {
@@ -52,6 +53,7 @@ header {
     color: white;
     padding: 0.5rem;
     display: block;
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
 }
 
 .nav-menu li a:hover {
