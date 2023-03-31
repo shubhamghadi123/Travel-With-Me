@@ -23,7 +23,7 @@
                                 <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
                                   <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                                 </symbol>
-                              </svg>
+                            </svg>
                             <div class="alert alert-danger d-flex align-items-center visually-hidden" role="alert" id="reg-error-msg">
                                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
                                 <div>
@@ -39,13 +39,13 @@
                             <div class="alert alert-danger d-flex align-items-center visually-hidden" role="alert" id="password2-error-msg">
                                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
                                 <div>
-                                    Password must be at least 8 characters
+                                    8 character password is required
                                 </div>
                             </div>
                             <div class="alert alert-danger d-flex align-items-center visually-hidden" role="alert" id="passwordcontains-error-msg">
                                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
                                 <div>
-                                    Password must contain at least 1 uppercase, 1 number and 1 symbol
+                                    Password must contain uppercase letter, number and symbol
                                 </div>
                             </div>
                             <div class="alert alert-danger d-flex align-items-center visually-hidden" role="alert" id="email-error-msg">
@@ -55,23 +55,23 @@
                                 </div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control inputText" id="floatingInput" placeholder="Username" name="username">
+                                <input type="text" class="form-control inputText" id="username" placeholder="Username" name="username">
                                 <label for="floatingInput">Username</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control inputText" id="floatingInput email" placeholder="Email" name="email">
+                                <input type="email" class="form-control inputText" id="email" placeholder="Email" name="email">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="password" class="form-control inputText" id="floatingPassword" placeholder="Password" name="password">
+                                <input type="password" class="form-control inputText" id="password" placeholder="Password" name="password">
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <div class="form-floating mb-4">
-                                <input type="password" class="form-control inputText" id="floatingPassword" placeholder="Confirm Password" name="confirmPassword">
+                                <input type="password" class="form-control inputText" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword">
                                 <label for="floatingPassword">Confirm Password</label>
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary submitBtn" type="button" id="register-btn">REGISTER</button>
+                                <button class="btn btn-primary submitBtn" type="button" id="register-btn" onclick="validate()">REGISTER</button>
                             </div>
                         </form>
                     </div>
