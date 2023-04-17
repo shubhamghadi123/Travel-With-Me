@@ -105,6 +105,31 @@ header {
     font-size: 50px;
 }
 
+.heading h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.location1 {
+    text-decoration: none;
+    color: black;
+}
+
+.location1-title {
+    margin-top: 15px;
+}
+
+.location1-description {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(114, 112, 112);
+}
+
+.location1-price {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
 @media only screen and (max-width: 768px){
     header {
         display: block;
